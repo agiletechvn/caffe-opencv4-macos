@@ -15,9 +15,17 @@ Check out the [project site](http://caffe.berkeleyvision.org) for all the detail
 
 and step-by-step examples.
 
+## Install
+
+```bash
+brew install gflags glog lmdb szip snappy leveldb protobuf boost hdf5
+mkdir build && cd build && cmake ..
+make -j8 && sudo make install
+```
+
 ## Custom distributions
 
- - [Intel Caffe](https://github.com/BVLC/caffe/tree/intel) (Optimized for CPU and support for multi-node), in particular Intel® Xeon processors.
+- [Intel Caffe](https://github.com/BVLC/caffe/tree/intel) (Optimized for CPU and support for multi-node), in particular Intel® Xeon processors.
 - [OpenCL Caffe](https://github.com/BVLC/caffe/tree/opencl) e.g. for AMD or Intel devices.
 - [Windows Caffe](https://github.com/BVLC/caffe/tree/windows)
 

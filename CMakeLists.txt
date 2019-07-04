@@ -1,4 +1,7 @@
-cmake_minimum_required(VERSION 2.8.7)
+cmake_minimum_required(VERSION 3.1)
+
+SET (CMAKE_CXX_FLAGS "-std=c++11")
+
 if(POLICY CMP0046)
   cmake_policy(SET CMP0046 NEW)
 endif()
